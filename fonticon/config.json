@@ -1,0 +1,59 @@
+{
+  "name": "sebio",
+  "glyphs": [
+    {
+      "search": [
+        "arrow",
+        "down"
+      ],
+      "code": 9662,
+      "from": 9662,
+      "uid": "8ax1xqcbzz1hobyd4i7f0unwib1bztip",
+      "css": "down-dir",
+      "orig_css": "down-dir",
+      "orig_code": 9662,
+      "src": "modernpics"
+    },
+    {
+      "search": [
+        "basket",
+        "shopping",
+        "cart"
+      ],
+      "code": 59197,
+      "from": 59197,
+      "uid": "vqyhv5kmwcj9zxq28dhq5npykr2k39co",
+      "css": "basket",
+      "orig_css": "basket",
+      "orig_code": 59197,
+      "src": "modernpics"
+    },
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 128100,
+      "from": 128100,
+      "uid": "fd3128bf109153952b1b775ea574504b",
+      "css": "user",
+      "orig_css": "user",
+      "orig_code": 128100,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 128269,
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "css": "search",
+      "orig_css": "search",
+      "orig_code": 128269,
+      "src": "entypo",
+      "from": 128269
+    }
+  ]
+}
