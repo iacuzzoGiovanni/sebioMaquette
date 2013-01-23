@@ -938,6 +938,54 @@ label+span, input+span{
     text-align: center;
 }
 
+#account{
+    background-image: url("../img/linedpaper.png");
+    padding-bottom: 2em;
+}
+
+#accountContainer{
+    max-width: 960px;
+    .box-sizing();
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    margin: 0 auto;
+}
+
+.deconnexion{
+    width: 100%;
+    display: inline-block;
+    .box-sizing();
+    text-align: center;
+}
+
+#accountContainer h1{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+#accountContainer ul{
+    list-style: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+#accountContainer a, #accountContainer li{
+    color: @blanc;
+    text-decoration: none;
+    background-color: @vert;
+    .border-radius(3px);
+    padding: 1em;
+    text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+    filter: dropshadow(color=rgba(0,0,0,.3), offx=0, offy=1);
+}
+
+#accountContainer li{
+    margin-bottom: 1em;
+    -webkit-box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, .2);  
+    box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, .2);
+    .box-sizing();
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

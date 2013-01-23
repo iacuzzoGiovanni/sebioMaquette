@@ -16,6 +16,21 @@
     },
     {
       "search": [
+        "pencil",
+        "write",
+        "reply",
+        "edit"
+      ],
+      "code": 9997,
+      "from": 9997,
+      "uid": "242giivkgr3e6le7b2xqi2pkdruf85mu",
+      "css": "edit",
+      "orig_css": "edit",
+      "orig_code": 9997,
+      "src": "modernpics"
+    },
+    {
+      "search": [
         "ok",
         true,
         "check",
@@ -45,6 +60,30 @@
     },
     {
       "search": [
+        "info"
+      ],
+      "code": 59141,
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled",
+      "orig_css": "info-circled",
+      "orig_code": 59141,
+      "src": "entypo",
+      "from": 59141
+    },
+    {
+      "search": [
+        "address"
+      ],
+      "code": 59171,
+      "uid": "540b6a4262be769515c79700618b4aea",
+      "css": "address",
+      "orig_css": "address",
+      "orig_code": 59171,
+      "src": "entypo",
+      "from": 59171
+    },
+    {
+      "search": [
         "basket",
         "shopping",
         "cart"
@@ -56,6 +95,18 @@
       "orig_css": "basket",
       "orig_code": 59197,
       "src": "modernpics"
+    },
+    {
+      "search": [
+        "list"
+      ],
+      "code": 61642,
+      "uid": "a2a74f5e7b7d9ba054897d8c795a326a",
+      "css": "list-bullet",
+      "orig_css": "list-bullet",
+      "orig_code": 61642,
+      "src": "fontawesome",
+      "from": 61642
     },
     {
       "search": [
@@ -73,6 +124,21 @@
     },
     {
       "search": [
+        "box",
+        "archive",
+        "package"
+      ],
+      "code": 128230,
+      "uid": "dd6df3b754e8d0dbf09d9b24088f0442",
+      "file": "box",
+      "css": "box",
+      "orig_css": "box",
+      "orig_code": 128230,
+      "src": "iconic",
+      "from": 128230
+    },
+    {
+      "search": [
         "search",
         "find"
       ],
@@ -83,6 +149,31 @@
       "orig_code": 128269,
       "src": "entypo",
       "from": 128269
+    },
+    {
+      "search": [
+        "key",
+        "password"
+      ],
+      "code": 128273,
+      "uid": "8beac4a5fd5bed9f82ca7a96cc8ba218",
+      "css": "key",
+      "orig_css": "key",
+      "orig_code": 128273,
+      "src": "entypo",
+      "from": 128273
+    },
+    {
+      "search": [
+        "lock"
+      ],
+      "code": 128274,
+      "from": 128274,
+      "uid": "c1f1975c885aa9f3dad7810c53b82074",
+      "css": "lock",
+      "orig_css": "lock",
+      "orig_code": 128274,
+      "src": "fontawesome"
     }
   ]
 }
