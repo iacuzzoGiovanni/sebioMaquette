@@ -46,66 +46,208 @@
                                 <input id="userId" name="userId" type="text" placeholder="indiquez votre login" />
                                 <label for="userPass">mot de passe&nbsp;:</label>
                                 <input id="userPass" name="userPass" type="password" placeholder="indiquez votre mot de passe" />
-                                <button type="submit">connexion</button>   
+                                <a href="./html/inscription.html">pas encore membre&nbsp;?</a>
+                                <button id="connexion" type="submit">connexion</button>   
                             </fieldset>
                         </form>
                     </div>
                 </div>
                 <nav>
                     <h1 id="navTitle">navigation menu</h1>
-                    <ul>
+                    <ul id="navUl">
                         <li class="firstItem">
-                            <p class="icon-down-dir">bonsplans</p>
-                            <ul>
-                                <li>nouveautés</li><!--
-                                --><li>articles en liquidation</li><!--
-                                --><li>chèques cadeau</li>
+                            <a href="#" class="icon-down-dir">bonsplans</a>
+                            <ul class="firstDrop">
+                                <li><a href="#"><strong>nouveautés</strong></a></li><!--
+                                --><li><a href="#"><strong>articles en liquidation</strong></a></li><!--
+                                --><li><a href="#"><strong>chèques cadeau</strong></a></li>
                             </ul>
                         </li><!--
                         --><li class="firstItem">
-                            <p class="icon-down-dir">maternité</p>
-                            <ul>
-                                <li>grossesse et allaitement</li><!--
-                                --><li>listes de naissance</li><!--
-                                --><li>bébé et enfants</li><!--
-                                --><li>couches</li><!--
-                                --><li>alimentation bio pour bébé</li><!--
-                                --><li>jeux et jouets</li><!--
-                                --><li>location de porte-bébé</li>
+                            <a href="#" class="icon-down-dir">maternité</a>
+                            <ul class="firstDrop">
+                                <li>
+                                    <a href="#"><strong>grossesse et allaitement</strong></a>
+                                    <ul>
+                                        <li><a href="#">beauté et soin pendant la grossesse</a></li>
+                                        <li><a href="#">allaitement</a></li>
+                                    </ul>
+                                </li><!--
+                                --><li>
+                                       <a href="#"><strong>listes de naissance</strong></a>
+                                       <ul>
+                                           <li><a href="#">Salima Barris / Thomas Louis</a></li>
+                                           <li><a href="#">Lex Adanja (Marloes Sijbenga & Ivan Adanja)</a></li>
+                                           <li><a href="#">Famille Ludovic Long- Geneviève Pétré</a></li>
+                                           <li><a href="#">Liste de  Roxane, Kev'n et The surprise baby</a></li>
+                                           <li><a href="#">toutes les lites</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>bébé et enfants</strong></a>
+                                       <ul>
+                                           <li><a href="#">toilette</a></li>
+                                           <li><a href="#">bien être et santé</a></li>
+                                           <li><a href="#">portage</a></li>
+                                           <li><a href="#">sommeil</a></li>
+                                           <li><a href="#">biberons et sucettes</a></li>
+                                           <li><a href="#">protection solaire</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li><a href="#"><strong>couches</strong></a></li><!--
+                                --><li>
+                                       <a href="#"><strong>alimentation bio pour bébé</strong></a>
+                                       <ul>
+                                           <li><a href="#">laits infantiles</a></li>
+                                           <li><a href="#">céréales</a></li>
+                                           <li><a href="#">légumes</a></li>
+                                           <li><a href="#">fruits et desserts</a></li>
+                                           <li><a href="#">accessoire</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>jeux et jouets</strong></a>
+                                       <ul>
+                                           <li><a href="#">jeux de société</a></li>
+                                           <li><a href="#">puzzles et logique</a></li>
+                                           <li><a href="#">jeux d'éveil</a></li>
+                                           <li><a href="#">activités manuelles</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li><a href="#">location de porte-bébé</a></li>
                             </ul>
                         </li><!--
                         --><li class="firstItem">
-                            <p class="icon-down-dir">à la maison</p>
-                            <ul>
-                                <li>papeterie</li><!--
-                                --><li>livres</li><!--
-                                --><li>la maison au naturel</li><!--
-                                --><li>produits d'entretien</li>
+                            <a href="#" class="icon-down-dir">à la maison</a>
+                            <ul class="firstDrop">
+                                <li>
+                                    <a href="#"><strong>papeterie</strong></a>
+                                    <ul>
+                                        <li><a href="#">papiers</a></li>
+                                        <li><a href="#">classeurs</a></li>
+                                        <li><a href="#">fournitures</a></li>
+                                        <li><a href="#">ecrire</a></li>
+                                        <li><a href="#">cartables</a></li>
+                                        <li><a href="#">calendriers</a></li>
+                                    </ul>
+                                </li><!--
+                                --><li>
+                                       <a href="#"><strong>livres</strong></a>
+                                       <ul>
+                                           <li><a href="#">adultes</a></li>
+                                           <li><a href="#">enfants</a></li>
+                                           <li><a href="#">clin d'oeil</a></li>
+                                           <li><a href="#">cachiers d'exercices</a></li>
+                                           <li><a href="#">grandir autrement</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>la maison au naturel</strong></a>
+                                       <ul>
+                                           <li><a href="#">linges de bain</a></li>
+                                           <li><a href="#">article de cuisine</a></li>
+                                           <li><a href="#">graines à germer</a></li>
+                                           <li><a href="#">sacs et pochettes</a></li>
+                                           <li><a href="#">insecticides et répulsifs</a></li>
+                                           <li><a href="#">papier hygiènique</a></li>
+                                           <li><a href="#">filtration d'eau</a></li>
+                                           <li><a href="#">air pur</a></li>
+                                           <li><a href="#">jardin</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>produits d'entretien</strong></a>
+                                       <ul>
+                                           <li><a href="#">vaisselle</a></li>
+                                           <li><a href="#">sols et sanitaires</a></li>
+                                           <li><a href="#">lessive</a></li>
+                                           <li><a href="#">surfaces spéciales</a></li>
+                                           <li><a href="#">droguerie</a></li>
+                                       </ul>
+                                   </li>
                             </ul>
                         </li><!--
                         --><li class="firstItem shortItem">
-                            <p class="icon-down-dir">santé</p>
-                            <ul>
-                                <li>bien-être</li><!--
-                                --><li>hygiène et soin</li><!--
-                                --><li>aromathérapie</li><!--
-                                --><li>ateliers nature</li><!--
-                                --><li>fleurs de Bach</li>
+                            <a href="#" class="icon-down-dir">santé</a>
+                            <ul class="firstDrop">
+                                <li>
+                                    <a href="#"><strong>bien-être</strong></a>
+                                    <ul>
+                                        <li><a href="#">compléments alimentaires</a></li>
+                                        <li><a href="#">spécial hiver</a></li>
+                                        <li><a href="#">argile</a></li>
+                                        <li><a href="#">produits minceur</a></li>
+                                        <li><a href="#">soins d'urgence</a></li>
+                                        <li><a href="#">massage</a></li>
+                                        <li><a href="#">bijoux bienfaisants</a></li>
+                                    </ul>
+                                </li><!--
+                                --><li>
+                                       <a href="#"><strong>hygiène et soin</strong></a>
+                                       <ul>
+                                           <li><a href="#">déodorants</a></li>
+                                           <li><a href="#">savons et gel douche</a></li>
+                                           <li><a href="#">shampoing</a></li>
+                                           <li><a href="#">soins dentaire/visage/corps</a></li>
+                                           <li><a href="#">maquillage</a></li>
+                                           <li><a href="#">intimité</a></li>
+                                           <li><a href="#">eaux florales</a></li>
+                                           <li><a href="#">produits solaire</a></li>
+                                           <li><a href="#">eaux de toilette</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>aromathérapie</strong></a>
+                                       <ul>
+                                           <li><a href="#">huiles essentielles et végétales</a></li>
+                                           <li><a href="#">diffuseurs, synergie et bougies</a></li>
+                                           <li><a href="#">pranaBB</a></li>
+                                           <li><a href="#">préparations</a></li>
+                                           <li><a href="#">accessoires</a></li>
+                                           <li><a href="#">cosmétiques</a></li>
+                                       </ul>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>ateliers nature</strong></a>
+                                   </li><!--
+                                --><li>
+                                       <a href="#"><strong>fleurs de Bach</strong></a>
+                                       <ul>
+                                           <li><a href="#">rescue - remède d'urgence</a></li>
+                                           <li><a href="#">les 38 fleurs de Bach</a></li>
+                                           <li><a href="#">complexes en granule</a></li>
+                                       </ul>
+                                   </li>
                             </ul>
                         </li><!--
                         --><li class="firstItem shortItem">
-                            <p class="icon-down-dir">mode</p>
-                            <ul>
-                                <li>vêtements</li><!--
-                                --><li>tissus</li><!--
-                                --><li>la queue du chat hiver 12/13</li>
+                            <a href="#" class="icon-down-dir">mode</a>
+                            <ul class="firstDrop">
+                                <li>
+                                    <a href="#"><strong>vêtements</strong></a>
+                                    <ul>
+                                        <li><a href="#">bébé</a></li>
+                                        <li><a href="#">femme</a></li>
+                                        <li><a href="#">homme</a></li>
+                                    </ul>
+                                </li><!--
+                                --><li>
+                                       <a href="#"><strong>tissus</strong></a>
+                                       <ul>
+                                           <li><a href="#">maille de coton</a></li>
+                                           <li><a href="#">coton tissé</a></li>
+                                           <li><a href="#">ouates et molletons</a></li>
+                                           <li><a href="#">tissus imperméable</a></li>
+                                       </ul>
+                                </li><!--
+                                --><li><a href="#">la queue du chat hiver 12/13</a></li>
                             </ul>
                         </li>
                     </ul>
                     <form action="#">
                         <fieldset>
                             <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>
-                            <input type="search" name="search" id="search" placeholder="rechercher à travers tout le site"/>
+                            <input type="search" name="search" id="search" placeholder="rechercher"/>
                         </fieldset>
                     </form>
                 </nav>

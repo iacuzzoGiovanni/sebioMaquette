@@ -11,7 +11,6 @@
 
 	// --- global vars
 	
-	
 	// --- methods
 	var slide = function(e){
 		e.preventDefault();

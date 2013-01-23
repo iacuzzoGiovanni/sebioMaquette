@@ -134,10 +134,7 @@ header{
     padding-left: 0.625em;
     padding-right: 0.625em;
     max-width: 960px;
-}
-
-#topContainer{
-    overflow: hidden;
+    height: 280px;
 }
 
 hgroup{
@@ -174,7 +171,12 @@ hgroup h2{
     font-size: 0.875em;
     background-color: @vert;
     color: @blanc;
-    .border-radius(3px);
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     float: right;
     position: relative;
     margin-top: 2.5em;
@@ -197,22 +199,48 @@ hgroup h2{
     margin-left: 1.4285714286em;
 }
 
+#user div{
+    -webkit-border-radius: 3px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    padding: 1em;
+    .box-sizing();
+}
+
 #user:hover div{
     display: block;
+    overflow: hidden;
+}
+
+#userId, #userPass{
+    display: block;
+    width: 99%;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    border: none;
+    display: inline-block;
+    border-bottom: 1px solid #316000;
+    -webkit-box-shadow:  0px 1px 0px 0px rgba(255, 255, 255, .4); 
+    box-shadow:  0px 1px 0px 0px rgba(255, 255, 255, .4);
 }
 
 nav{
     width: 100%;
-    overflow: hidden;
     padding-top: 3em;
+    z-index: 100;
 }
 
-nav ul{
+#navUl{
     clear: both;
-    width: 31.25em;
+    width: 100%;
     padding: 0;
     float: left;
     margin: 0;
+    position: relative;
+    top: 4em;
 }
 
 nav h1{
@@ -225,15 +253,78 @@ nav li{
 
 nav li li{
     display: block;
+    float: left;
+    width: 22.91666667%;
+    padding-right: 1em;
 }
 
-nav li ul{
+nav li li li{
+    float: none;
+    width: auto;
+    margin-bottom: 0.5em;
+}
+
+.firstDrop{
     display: none;
+    position: absolute;
+    font-size: 0.75em;
+    width: 100%;
+    .box-sizing();
+    padding: 2em;
+    z-index: 100;
+    background-color: @blanc;
+    margin: 0;
+    left: 0;
+    -webkit-box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .5);   
+    box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, .5);
+}
+
+.firstDrop ul{
+    padding: 0;
+    padding-right: 2em;
+    margin: 0;
+}
+
+.firstDrop strong{
+    font-size: 1.33em;
+    color: @vert;
+}
+
+.firstDrop a{
+    text-decoration: none;
+    color: #000;
 }
 
 .firstItem{
     width: 6.25em;
     margin-right: 1.25em;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.firstItem:hover{
+    background-color: @blanc;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.firstItem .icon-down-dir{
+    color: @vert;
+    text-decoration: none;
+}
+
+.firstItem:hover .icon-down-dir{
+    text-align: center;
+    display: block;
+    font-size: 0.75em;
 }
 
 .firstItem:last-child{
@@ -242,6 +333,10 @@ nav li ul{
 
 .firstItem p{
     color: @vert;
+}
+
+.firstItem:hover .firstDrop{
+    display: block;
 }
 
 .shortItem{
@@ -253,9 +348,10 @@ nav li ul{
 }
 
 #search{
+    display: inline-block;
     border: none;
     background: none;
-    width: 90%;
+    width: 85%;
     color: @blanc;
 }
 
@@ -264,14 +360,19 @@ nav form{
     position: relative;
     padding: 0.2em;
     padding-left: 0.5em;
+    margin-bottom: 2em;
     .border-radius(3px);
-    width: 21.25em;
+    width: 100%;
     float: right;
     .box-sizing();
     position: relative;
-    top: 0.7em;
+    top: 6em;
     -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3); 
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3);
+}
+
+nav form:focus{
+    width: 21.25em;
 }
 
 nav label{
@@ -544,6 +645,7 @@ footer{
     overflow: hidden;
     padding: 2em 0;
     border-top: 0.5em solid @vert;
+    clear: both;
 }
 
 #bottomContainer{
@@ -581,6 +683,74 @@ footer p{
 
 footer a{
     color: @vert;
+}
+
+/* fiche inscription */
+
+#signIn{
+    background-image: url(../img/linedpaper.png);
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#signIn h1{
+    margin-top: 0;
+}
+
+#signIn div:first-child{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    .box-sizing();
+}
+
+#signIn input{
+    .border-radius(3px);
+    border: 1px solid @vert;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .2), 0px 1px 0px 0px rgba(255, 255, 255, .4);  
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .2), 0px 1px 0px 0px rgba(255, 255, 255, .4);
+    margin-bottom: 1em;
+    padding: 0.3em;
+    margin-left: 1em;
+}
+
+#signIn form div{
+    padding: 0 !important;
+}
+
+#signIn h2{
+    background-color: @vert;
+    padding: 0.5em;
+    color: @blanc;
+    .border-radius(3px);
+    text-shadow: 0px 1px 1px rgba(0,0,0, .5);
+    filter: dropshadow(color=#000000, offx=0, offy=1);
+}
+
+#signIn label{
+    font-weight: 700;
+    display: inline-block;
+    width: 20em;
+    text-align: right;
+}
+
+#signIn select{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+#signIn h1+strong{
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.gender{
+    display: inline !important;
 }
 /* ==========================================================================
    Helper classes
