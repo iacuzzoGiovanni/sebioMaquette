@@ -2,6 +2,8 @@
 
 
 .icon-down-dir:before { content: '\25be'; } /* '▾' */
+.icon-check:before { content: '\2713'; } /* '✓' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
 .icon-basket:before { content: '\e73d'; } /* '' */
 .icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
