@@ -254,13 +254,25 @@
             </div>
         </header>
         <section id="shippingAddress">
+            <div class="ariane"><a href="./compte.html" title="retourner à la page du compte">compte</a> > adresse de livraison</div>
             <div id="shippingAddressContainer">
                 <h1>Mes adresses de livraisons</h1>
                 <form action="#">
                     <fieldset class="address">
-                        <h2>Première adresse</h2>
-                        <p>Giovanni iacuzzo</p>
+                        <h2>adresse 1</h2>
+                        <p class="icon-user">Giovanni iacuzzo</p>
                         <address class="icon-location">rue de bois de breux 130, 4020 Jupille, BELGIQUE</address>
+                        <div class="shippingChoice">
+                            <label for="shippingAddress">utiliser cette adresse</label>
+                            <input type="radio" name="shippingAddress" id="shippingAddress" />
+                        </div>
+                        <a href="#" title="modifier son adresse de facturation">modifier l'adresse</a>
+                        <a href="#" title="ajouter une nouvelle adresse de facturation">ajouter une adresse</a>
+                    </fieldset>
+                    <fieldset class="address">
+                        <h2>adresse 2</h2>
+                        <p class="icon-user">Giovanni iacuzzo</p>
+                        <address class="icon-location">rue winston churchill 317, 4020 Liège, BELGIQUE</address>
                         <div class="shippingChoice">
                             <label for="shippingAddress">utiliser cette adresse</label>
                             <input type="radio" name="shippingAddress" id="shippingAddress" />

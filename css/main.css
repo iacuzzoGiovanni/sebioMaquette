@@ -1128,6 +1128,7 @@ input + span {
 
   display: block;
   position: relative;
+  margin-top: 3em;
 }
 .address h2,
 .address p {
@@ -1136,9 +1137,10 @@ input + span {
 .address p {
   font-size: 2em;
   margin-top: 0.5em;
+  text-align: center;
 }
 .address address {
-  display: inline-block;
+  text-align: center;
 }
 #shippingAddressContainer button {
   color: #ffffff;
@@ -1152,7 +1154,7 @@ input + span {
   filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
   border: none;
   width: 100%;
-  margin: 1em 0;
+  margin: 2em 0;
   background: #538201;
   /* Old browsers */
 
@@ -1199,7 +1201,266 @@ input + span {
   filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
 }
 .shippingChoice {
+  text-align: center;
+  margin-top: 1em;
+}
+#orderContainer {
+  max-width: 960px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+
+  -webkit-box-sizing: border-box;
+  /* Safari */
+
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  margin: 0 auto;
+}
+#orderContainer li {
+  list-style: none;
+}
+#orderContainer strong {
+  color: #538201;
+}
+#orderContainer ul,
+#orderContainer p {
+  padding: 0;
+  margin: 0;
+}
+.orderInfos {
+  float: left;
+  width: 25%;
+  margin-right: 1em;
+  border-right: 1px solid #000;
+  margin-bottom: 10%;
+}
+#order {
+  background-image: url("../img/linedpaper.png");
+  padding: 1em;
+}
+.oneOrder {
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2em;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.progress,
+.orderProducts,
+.logistics {
   float: right;
+  width: 40em;
+}
+.orderProducts li {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin: 1em 0;
+}
+.orderProducts li span {
+  display: inline-block;
+  width: 32%;
+}
+.progress span {
+  font-size: 2em;
+}
+.progress div {
+  background-color: #aaa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+.progress div span {
+  color: #ffffff;
+  display: inline-block;
+  background: #538201;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #649312 0%, #538201 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #649312), color-stop(100%, #538201));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #649312 0%, #538201 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #649312 0%, #538201 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #649312 0%, #538201 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #649312 0%, #538201 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#649312, endColorstr=#538201, GradientType=0);
+  /* IE6-9 */
+
+  width: 75%;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
+}
+#orderContainer h1 {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#order .ariane {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+#cartPage,
+#finalCart {
+  background-image: url("../img/linedpaper.png");
+  padding: 1em;
+}
+#cartContainer,
+#finalCartContainer {
+  max-width: 960px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+
+  -webkit-box-sizing: border-box;
+  /* Safari */
+
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  margin: 0 auto;
+}
+#cartContainer table {
+  width: 100%;
+  background-color: #ffffff;
+}
+#cartContainer table th,
+#cartContainer table td {
+  text-align: left;
+  padding: 1em;
+}
+#cartContainer table thead,
+#cartContainer table tfoot {
+  background-color: #538201;
+  color: #ffffff;
+}
+#cartContainer table img + span {
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+#cartContainer table tbody tr {
+  background-color: #eee;
+  border-bottom: 1px solid #538201;
+}
+#cartContainer table img {
+  display: block;
+}
+#cartContainer table input {
+  width: 3em;
+}
+#cartContainer h1,
+#finalCartContainer h1 {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#cartContainer fieldset,
+#finalCartContainer fieldset {
+  background-color: #ffffff;
+  margin: 1em 0;
+  padding: 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+#finalCartContainer input {
+  width: 100%;
+}
+#cartContainer fieldset:last-child input,
+#finalCartContainer input {
+  background: #538201;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #649312 0%, #538201 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #649312), color-stop(100%, #538201));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #649312 0%, #538201 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #649312 0%, #538201 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #649312 0%, #538201 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #649312 0%, #538201 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#649312, endColorstr=#538201, GradientType=0);
+  /* IE6-9 */
+
+  padding: 1em;
+  color: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
+  border: none;
+}
+#cartContainer h2 {
+  color: #538201;
+  margin-top: 0;
+}
+#finalCartContainer p {
+  margin: 0;
+}
+#TT {
+  text-align: right;
+  margin-top: 1em;
+}
+#reduc,
+#logisticPrice {
+  margin: 1em 0;
+}
+#finalCartContainer ul {
+  padding: 0;
+  list-style: none;
+}
+#finalCartContainer p + p {
+  margin-bottom: 2em;
+}
+#finalCartContainer ul span {
+  display: inline-block;
+  width: 48%;
+}
+#finalCartContainer ul span + span {
+  text-align: right;
+}
+#finalCartContainer li {
+  padding: 0.5em;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-bottom: 1em;
+}
+#finalCart .ariane {
+  margin: 0;
+  margin-bottom: 1em;
 }
 /* ==========================================================================
    Helper classes

@@ -253,17 +253,37 @@
                 </nav>
             </div>
         </header>
-        <section id="account">
-            <div id="accountContainer">
-                <h1>Mon compte client</h1>
-                <ul>
-                  <li class="icon-user"><a href="#" title="afficher ses données personnelles et les modifier">données personnelles</a></li>
-                  <li class="icon-address"><a href="./adresse_livraison.html" title="afficher ses adresses de livraison, en ajouter ou en supprimer">adresses de livraison</a></li>
-                  <li class="icon-lock"><a href="#" title="modifier son mot de passe">mot de passe</a></li>
-                  <li class="icon-list-bullet"><a href="#" title="afficher ses listes d'achats, les modifier, en ajouter ou supprimer">gérer ses listes d'achats</a></li>
-                  <li class="icon-box"><a href="./commande.html" title="afficher ses commandes, les annuler">mes commandes</a></li>
-                </ul>
-                <a class="deconnexion" href="#">sé déconnecter du compte</a>
+        <section id="finalCart">
+            <div id="finalCartContainer">
+                <div class="ariane"><a href="./cart.html" title="retourner au panier">panier</a> > finalisation commande</div>
+                <h1>Finalisation de la commande</h1>
+                <form action="#">
+                    <fieldset>
+                        <h2>les produits</h2>
+                        <ul>
+                            <li>
+                                <span>pranaForce</span>
+                                <span><strong>Qte&nbsp;:</strong>3</span>
+                            </li>
+                            <li>
+                                <span>Lotion</span>
+                                <span><strong>Qte&nbsp;:</strong>1</span>
+                            </li>
+                        </ul> 
+                        <div id="TT">
+                            <span>total du panier&nbsp;:<strong> 165€</strong></span>
+                        </div>
+                        <div id="reduc">
+                            <span>votre réduction est de&nbsp;:<strong> 13,65€</strong></span>
+                        </div>
+                        <div id="logisticPrice">
+                            <span>votre transport est géré par taxipost et vous coûte&nbsp;:<strong> 10€</strong></span>
+                        </div>
+                        <p><strong>Total de la commande</strong></p>
+                        <p>168,65€</p>
+                        <input type="submit" value="finaliser la commande">
+                    </fieldset>
+                </form>
             </div>
         </section>
         <footer>
