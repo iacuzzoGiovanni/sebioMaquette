@@ -18,6 +18,7 @@
   width: 1em;
   margin-right: 0.2em;
   text-align: center;
+  opacity: 1;
 /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
 /* Animation center compensation - magrins should be symmetric */
@@ -35,6 +36,7 @@
 .icon-cancel:before { content: '\2715'; } /* '✕' */
 .icon-info-circled:before { content: '\e705'; } /* '' */
 .icon-address:before { content: '\e723'; } /* '' */
+.icon-location:before { content: '\e724'; } /* '' */
 .icon-basket:before { content: '\e73d'; } /* '' */
 .icon-list-bullet:before { content: '\f0ca'; } /* '' */
 .icon-user:before { content: '👤'; } /* '\1f464' */

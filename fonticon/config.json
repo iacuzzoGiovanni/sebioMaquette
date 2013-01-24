@@ -84,6 +84,20 @@
     },
     {
       "search": [
+        "location",
+        "mark",
+        "marker"
+      ],
+      "code": 59172,
+      "from": 59172,
+      "uid": "gjt8ba5q0n3nn8ptw6324sflr8qoaeam",
+      "css": "location",
+      "orig_css": "location",
+      "orig_code": 59172,
+      "src": "typicons"
+    },
+    {
+      "search": [
         "basket",
         "shopping",
         "cart"
