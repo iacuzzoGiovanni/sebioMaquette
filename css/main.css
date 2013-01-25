@@ -1275,6 +1275,7 @@ input + span {
   border-radius: 3px;
   -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 .progress div span {
   color: #ffffff;
@@ -1320,12 +1321,14 @@ input + span {
   margin-bottom: 1em;
 }
 #cartPage,
-#finalCart {
+#finalCart,
+#oneProduct {
   background-image: url("../img/linedpaper.png");
   padding: 1em;
 }
 #cartContainer,
-#finalCartContainer {
+#finalCartContainer,
+#oneProductContainer {
   max-width: 960px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1367,7 +1370,8 @@ input + span {
   width: 3em;
 }
 #cartContainer h1,
-#finalCartContainer h1 {
+#finalCartContainer h1,
+#oneProductContainer h1 {
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   margin: 0;
@@ -1375,7 +1379,8 @@ input + span {
   margin-bottom: 1em;
 }
 #cartContainer fieldset,
-#finalCartContainer fieldset {
+#finalCartContainer fieldset,
+#oneProductContainer article {
   background-color: #ffffff;
   margin: 1em 0;
   padding: 1em;
@@ -1461,6 +1466,80 @@ input + span {
 #finalCart .ariane {
   margin: 0;
   margin-bottom: 1em;
+}
+#topProduct,
+#venduAussi {
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+
+  -webkit-box-sizing: border-box;
+  /* Safari */
+
+}
+#topProduct {
+  width: 64.58333333%;
+  margin-top: 0 !important;
+}
+#venduAussi {
+  width: 33.25%;
+  margin-left: 2.083333333%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+#venduAussi article {
+  background-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #538201;
+}
+#venduAussi article:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+#venduAussi article img {
+  display: block;
+  margin: 0 auto;
+}
+#venduAussi h2 {
+  font-size: 1em;
+  padding: 1em;
+  margin: 0;
+}
+#venduAussi h3 a {
+  text-decoration: none;
+  color: #538201;
+}
+#venduAussi h3 {
+  text-align: center;
+}
+#oneProductContainer {
+  overflow: hidden;
+}
+#topProduct strong {
+  color: #538201;
+}
+.contentProduct {
+  margin-bottom: 1em;
+}
+#venduAussi .viewProduct {
+  margin-bottom: 1em;
+}
+#venduAussi .price {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#oneProductContainer .ariane {
+  margin: 0;
+  margin-bottom: 1em;
+}
+.responsiveCartUser {
+  display: none;
+}
+#responsiveNav {
+  display: none;
 }
 /* ==========================================================================
    Helper classes
@@ -1556,8 +1635,242 @@ input + span {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 959px) {
+  footer section {
+    float: none;
+    width: auto;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  #favourite article {
+    float: none;
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1em;
+  }
+  #favourite article figure img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+  }
+  #favourite figcaption {
+    float: right;
+  }
+  #highlited {
+    display: none;
+  }
+  #user,
+  #cart {
+    display: none;
+  }
+  #topContainer {
+    height: auto;
+  }
+  #topContainer hgroup {
+    text-align: center;
+    float: none;
+    width: auto;
+    margin-bottom: 1em;
+  }
+  hgroup h2 {
+    font-size: 1em;
+    position: static;
+  }
+  .responsiveCartUser {
+    display: block;
+    text-align: center;
+  }
+  .responsiveCartUser a {
+    display: block;
+    padding: 1em;
+    background: #538201;
+    /* Old browsers */
+  
+    background: -moz-linear-gradient(top, #649312 0%, #538201 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #649312), color-stop(100%, #538201));
+    /* Chrome,Safari4+ */
+  
+    background: -webkit-linear-gradient(top, #649312 0%, #538201 100%);
+    /* Chrome10+,Safari5.1+ */
+  
+    background: -o-linear-gradient(top, #649312 0%, #538201 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #649312 0%, #538201 100%);
+    /* IE10+ */
+  
+    background: linear-gradient(to bottom, #649312 0%, #538201 100%);
+    /* W3C */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#649312, endColorstr=#538201, GradientType=0);
+    /* IE6-9 */
+  
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1em;
+  }
+  header {
+    overflow: hidden;
+  }
+  nav {
+    padding: 0;
+  }
+  #nonResponsiveNav {
+    display: none;
+  }
+  #responsiveNav a {
+    display: block;
+    padding: 1em;
+    background: #538201;
+    /* Old browsers */
+  
+    background: -moz-linear-gradient(top, #649312 0%, #538201 100%);
+    /* FF3.6+ */
+  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #649312), color-stop(100%, #538201));
+    /* Chrome,Safari4+ */
+  
+    background: -webkit-linear-gradient(top, #649312 0%, #538201 100%);
+    /* Chrome10+,Safari5.1+ */
+  
+    background: -o-linear-gradient(top, #649312 0%, #538201 100%);
+    /* Opera 11.10+ */
+  
+    background: -ms-linear-gradient(top, #649312 0%, #538201 100%);
+    /* IE10+ */
+  
+    background: linear-gradient(to bottom, #649312 0%, #538201 100%);
+    /* W3C */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#649312, endColorstr=#538201, GradientType=0);
+    /* IE6-9 */
+  
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=1);
+    text-align: center;
+    text-decoration: none;
+  }
+  #responsiveNav {
+    text-align: center;
+    padding: 1em 0;
+    display: block;
+  }
+  #responsiveNav ul {
+    padding: 0;
+  }
+  #responsiveNav form {
+    float: none;
+    top: 0;
+    margin-bottom: 0;
+  }
+  #search {
+    width: 90%;
+  }
+  .orderInfos {
+    width: auto;
+    float: none;
+    border: none;
+  }
+  .progress,
+  .orderProducts,
+  .logistics {
+    float: none;
+    width: auto;
+  }
+  .orderProducts li span {
+    width: auto;
+    display: block;
+  }
+  #houseContainer section,
+  #filter {
+    float: none;
+  }
+  #filter {
+    overflow: hidden;
+    width: auto;
+    margin-bottom: 1em;
+  }
+  #filter > ul > li {
+    float: left;
+    width: 32%;
+  }
+  #houseContainer section {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+  
+    -webkit-box-sizing: border-box;
+    /* Safari */
+  
+    margin: 0;
+  }
+}
+/*pour ecran en deca de 959px*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/*pour tablet mode paysage*/
+@media only screen and (max-width: 767px) {
+  
+}
+/*pour tablet mode portrait*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/*telephone mode paysage*/
+@media only screen and (max-width: 480px) {
+  #accountContainer a,
+  #accountContainer li {
+    padding: 0.2em;
+  }
+  .address h2 {
+    width: 50%;
+  }
+}
+/*telephone mode portrait*/
+@media all and (max-width: 640px) {
+  table,
+  thead,
+  tbody,
+  tfoot,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  tr + tr {
+    margin-top: 1em;
+  }
+  tfoot {
+    display: none;
+  }
+  #filter {
+    display: none;
+  }
+  nav li {
+    display: inline-block;
+    float: left;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    width: 45%;
+  }
+  #responsiveNav ul {
+    overflow: hidden;
+  }
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */

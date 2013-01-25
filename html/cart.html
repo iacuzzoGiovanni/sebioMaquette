@@ -24,7 +24,7 @@
         <header>
             <div id="topContainer">
                 <hgroup>
-                    <h1><a href="#" "aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
+                    <h1><a href="../index.html" "aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
                     <h2>produits naturels, bios et écologiques</h2>
                 </hgroup>
                 <div id="cart">
@@ -52,7 +52,27 @@
                         </form>
                     </div>
                 </div>
-                <nav>
+                <div class="responsiveCartUser">
+                    <a href="./html/inscription.html"><span>pas encore inscit&nbsp;?</span></a>
+                    <a href="./html/connexion.html" class="icon-user"><span>se connecter</span></a>
+                    <a href="./html/cart.html" class="icon-basket"><span>mon panier</span></a>
+                </div>
+                <nav id="responsiveNav">
+                    <ul>
+                      <li><a href="#">bons plan</a></li>
+                      <li><a href="#">maternité</a></li>
+                      <li><a href="./html/maison.html">à la maison</a></li>
+                      <li><a href="#">santé</a></li>
+                      <li><a href="#">mode</a></li>
+                    </ul>
+                    <form action="#">
+                        <fieldset>
+                            <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>
+                            <input type="search" name="search" id="search" placeholder="rechercher"/>
+                        </fieldset>
+                    </form>
+                </nav>
+                <nav id="nonResponsiveNav">
                     <h1 id="navTitle">navigation menu</h1>
                     <ul id="navUl">
                         <li class="firstItem">
@@ -256,7 +276,7 @@
         <section id="cartPage">
             <div id="cartContainer">
                 <h1>Mon panier</h1>
-                <form action="#">
+                <form action="./cart_final.html">
                     <fieldset>
                         <h2>Contenu du panier</h2>
                          <table>
@@ -316,11 +336,9 @@
                     <fieldset>
                         <h2>Mode de transport</h2>
                         <select title="Sélectionner un mode de livraison" name="ShippingMethod">
-                            <option selected="selected" value="103949">Envoi du colis (par coliposte ou taxipost)</option>
-                            <option value="105246">Envoi sous enveloppe (1 article = 1 EURO de frais de port)</option>
-                            <option value="103951">Retrait par le client</option>
-                            <option value="105247">Autres pays (Suisse et Pays non limitrophes à France/Belgique)</option>
-                            <option value="114479">Liste de naissance</option>
+                            <option selected="selected" value="103949">livraison normale</option>
+                            <option value="105246">livraison rapide</option>
+                            <option value="103951">livraison express</option>
                         </select>
                         <div id="logisticPrice">
                             <span>tarif transport&nbsp;:<strong> 10€</strong></span>
