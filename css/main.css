@@ -1825,7 +1825,16 @@ input + span {
 }
 /*pour tablet mode paysage*/
 @media only screen and (max-width: 767px) {
-  
+  #venduAussi {
+    display: none;
+  }
+  #topProduct {
+    float: none;
+    width: auto;
+  }
+  .stock p {
+    width: auto;
+  }
 }
 /*pour tablet mode portrait*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1839,6 +1848,21 @@ input + span {
   }
   .address h2 {
     width: 50%;
+  }
+  #signIn label {
+    display: block;
+    width: auto;
+    text-align: left;
+  }
+  #signIn input {
+    width: 93%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+  
+    -webkit-box-sizing: border-box;
+    /* Safari */
+  
   }
 }
 /*telephone mode portrait*/
