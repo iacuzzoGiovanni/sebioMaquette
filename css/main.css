@@ -227,7 +227,7 @@ nav {
   float: left;
   margin: 0;
   position: relative;
-  top: 4em;
+  top: 3em;
 }
 nav h1 {
   display: none;
@@ -347,7 +347,7 @@ nav form {
   /* Safari */
 
   position: relative;
-  top: 6em;
+  top: 3.5em;
   -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
