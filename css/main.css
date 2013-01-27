@@ -143,6 +143,9 @@ hgroup h2 {
   top: -1.5em;
   left: 5.3em;
 }
+#user {
+  height: 9em;
+}
 #user,
 #cart {
   width: 10em;
@@ -154,8 +157,6 @@ hgroup h2 {
 }
 #user:hover,
 #cart:hover {
-  width: 10em;
-  font-size: 0.875em;
   background-color: #538201;
   color: #ffffff;
   -webkit-border-top-left-radius: 3px;
@@ -164,33 +165,6 @@ hgroup h2 {
   -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  float: right;
-  position: relative;
-  margin-top: 2.5em;
-  background: #538201;
-  /* Old browsers */
-
-  background: -moz-linear-gradient(top, #649312 0%, #538201 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #649312), color-stop(100%, #538201));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #649312 0%, #538201 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #649312 0%, #538201 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #649312 0%, #538201 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #649312 0%, #538201 100%);
-  /* W3C */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#649312, endColorstr=#538201, GradientType=0);
-  /* IE6-9 */
-
 }
 #user h1,
 #cart h1 {
