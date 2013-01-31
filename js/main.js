@@ -20,10 +20,21 @@
 		$('#highlited article[data-index="' + $(this).attr("data-index") + '"]').show();
 	};
 
+	var makeTall = function(e){
+		$(this).find('.firstDrop').show();
+	};
+
+	var makeShort = function(e){
+		$(this).find('.firstDrop').hide();
+	};
+
 	$( function () {
 		// --- onload routines
+		$(".firstItem").attr('class', 'firstItemJs');
+		$(".firstItemJs").slice(-2).attr('class', 'firstItemJs shortItem');
 		$("#changeSlide li:first-child a").css('backgroundImage', 'url("./img/arrowSlide.png")');
 		$("#changeSlide a").on("click", slide);
+		$(".firstItemJs").hoverIntent({over: makeTall, timeout: 500, out:makeShort});
 	} );
 }( jQuery ) );
 
