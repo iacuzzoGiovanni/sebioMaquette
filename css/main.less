@@ -134,7 +134,8 @@ header{
     padding-left: 0.625em;
     padding-right: 0.625em;
     max-width: 960px;
-    height: 280px;
+    height: 180px;
+    position: relative;
 }
 
 hgroup{
@@ -157,28 +158,35 @@ hgroup h2{
     left: 5.3em;
 }
 
-#user{
-    height: 9em;
-}
-
 #user, #cart{
-    width: 10em;
+    width: 11.25em;
     font-size: 0.875em;
-    color: @vert;
-    float: right;
-    position: relative;
-    margin-top: 2.5em;
+    position: absolute;
+    top: -2.3em;
+    right: 0;
+    background-color: @vert;
+    color: @blanc;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 #user:hover, #cart:hover{
-    background-color: @vert;
-    color: @blanc;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 4em;
+}
+
+#cart{
+    right: 0.625em;
+}
+
+#user{
+    right: 13.125em;
 }
 
 #user h1, #cart h1{
@@ -197,6 +205,27 @@ hgroup h2{
     margin-left: 1.4285714286em;
 }
 
+#connexion, #user a{
+    padding: 0.3em;
+    border: none;
+    background: none;
+    .gradient(#fff, #e5e5e5);
+    .border-radius(3px);
+    -webkit-box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, .5);
+    box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, .5);
+    width: 100%;
+    margin-top: 0.6em;
+}
+
+#user a{
+    display: block;
+    .box-sizing();
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    padding: 0.1em;
+}
+
 #user div{
     -webkit-border-radius: 3px;
     -webkit-border-top-left-radius: 0;
@@ -206,6 +235,10 @@ hgroup h2{
     border-top-left-radius: 0;
     padding: 1em;
     .box-sizing();
+    margin-top: 1em;
+    -webkit-box-shadow:  0px 3px 2px 0px rgba(0, 0, 0, .3);
+    box-shadow:  0px 3px 2px 0px rgba(0, 0, 0, .3);
+    z-index: 100;
 }
 
 #user:hover div{
@@ -242,7 +275,7 @@ nav{
     float: left;
     margin: 0;
     position: relative;
-    top: 3em;
+    top: 1em;
 }
 
 nav h1{
@@ -254,8 +287,7 @@ nav li{
 }
 
 nav li li{
-    display: block;
-    float: left;
+    display: inline-table;
     width: 22.91666667%;
     padding-right: 1em;
 }
@@ -316,6 +348,8 @@ nav li li li{
     -moz-border-radius-topright: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
 .firstItem .icon-down-dir{
@@ -326,7 +360,6 @@ nav li li li{
 .firstItem:hover .icon-down-dir{
     text-align: center;
     display: block;
-    font-size: 0.75em;
 }
 
 .firstItem:last-child{
@@ -362,13 +395,12 @@ nav form{
     position: relative;
     padding: 0.2em;
     padding-left: 0.5em;
-    margin-bottom: 2em;
     .border-radius(3px);
-    width: 100%;
+    width: 35.41666667%;
     float: right;
     .box-sizing();
     position: relative;
-    top: 3.5em;
+    top: -0.8em;
     -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3); 
     box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3);
 }
