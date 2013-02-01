@@ -194,18 +194,18 @@ hgroup h2{
     text-align: center;
 }
 
-#user div, #cart div{
-    display: none;
+#user div, #cart>div{
     background-color: @vert;
     width: 21.428571429em;
     position: absolute;
+    display: none;
 }
 
 #cart{
     margin-left: 1.4285714286em;
 }
 
-#connexion, #user a{
+#connexion, #user a, #cart a{
     padding: 0.3em;
     border: none;
     background: none;
@@ -217,7 +217,7 @@ hgroup h2{
     margin-top: 0.6em;
 }
 
-#user a{
+#user a, #cart a{
     display: block;
     .box-sizing();
     text-align: center;
@@ -226,7 +226,7 @@ hgroup h2{
     padding: 0.1em;
 }
 
-#user div{
+#user div, #cart>div{
     -webkit-border-radius: 3px;
     -webkit-border-top-left-radius: 0;
     -moz-border-radius: 3px;
@@ -241,6 +241,24 @@ hgroup h2{
     z-index: 100;
 }
 
+#cart ul{
+    padding: 0;
+    list-style: none;
+}
+
+#cart li{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    border-top: 1px dotted rgba(0,0,0, .5);
+}
+
+#cart li span{
+    width: 32%;
+    display: inline-table;
+    text-align: right;
+}
+
 #user:hover div{
     display: block;
 }
@@ -249,6 +267,27 @@ hgroup h2{
     display: block;
 }
 
+#cart:hover div{
+    display: block;
+}
+
+#cart div div{
+    -webkit-box-shadow:  none;
+    box-shadow:  none;
+    width: 100%;
+    padding: 0;
+    padding-top: 0.5em;
+    text-align: right;
+    border-top: 1px dotted rgba(0,0,0, .5);
+}
+
+#cart div div span{
+    width: 49%;
+}
+
+#cart>div{
+    right: 0;
+}
 
 #userId, #userPass{
     display: block;
@@ -364,6 +403,16 @@ nav li li li{
     -moz-border-radius-topright: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;  
+}
+
+.firstItemJs:hover{
+    background-color: @blanc;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
 }
 
 .firstItem .icon-down-dir{
@@ -563,6 +612,18 @@ nav label{
     margin-bottom:2em;
 }
 
+.numberProduct{
+    .gradient(#222, #111);
+    color: @blanc;
+    display: block;
+    width: 20px;
+    height: 20px;
+    .border-radius(10px);
+    position: absolute;
+    top: 0.6em;
+    left: 1em;
+}
+
 #favourite{
     max-width: 960px;
     margin: 0 auto;
@@ -593,6 +654,11 @@ nav label{
     -moz-border-radius-topright: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+
+#favourite h2 a{
+    color: @blanc;
+    text-decoration: none;
 }
 
 #favourite article{
@@ -711,6 +777,7 @@ footer{
 #bottomContainer{
     max-width: 960px;
     margin: 0 auto;
+    font-size: 0.9em;
 }
 
 footer section{
@@ -729,7 +796,7 @@ footer section div{
 }
 
 footer h1{
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 footer ul{
@@ -743,6 +810,30 @@ footer p{
 
 footer a{
     color: @vert;
+}
+
+#payement li{
+    width: 90px;
+    height: 50px;
+    background-image: url("../img/payement.png");
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+.visa{
+    background-position: 90px 0;
+}
+
+.CB{
+    background-position: 0 -100px;
+}
+
+.paypal{
+    background-position: 90px -50px;
+}
+
+.mastercard{
+    background-position: 0 -50px;
 }
 
 /* fiche inscription */
@@ -1569,6 +1660,10 @@ label+span, input+span{
 
     #user, #cart{
         display: none;
+    }
+
+    #cart{
+        position: relative;
     }
 
     #topContainer{

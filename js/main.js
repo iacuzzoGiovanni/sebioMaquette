@@ -34,7 +34,7 @@
 		$(".firstItemJs").slice(-2).attr('class', 'firstItemJs shortItem');
 		$("#changeSlide li:first-child a").css('backgroundImage', 'url("./img/arrowSlide.png")');
 		$("#changeSlide a").on("click", slide);
-		$(".firstItemJs").hoverIntent({over: makeTall, timeout: 500, out:makeShort});
+		$(".firstItemJs").hoverIntent({over: makeTall, timeout: 100, out:makeShort});
 	} );
 }( jQuery ) );
 
