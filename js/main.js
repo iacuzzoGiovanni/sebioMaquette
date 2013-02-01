@@ -35,6 +35,8 @@
 		$("#changeSlide li:first-child a").css('backgroundImage', 'url("./img/arrowSlide.png")');
 		$("#changeSlide a").on("click", slide);
 		$(".firstItemJs").hoverIntent({over: makeTall, timeout: 100, out:makeShort});
+		$("#search").focus(function(e){$(".results").show();})
+					.focusout(function(e){$('.results').hide();});
 	} );
 }( jQuery ) );
 
