@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
         <title>Sebio - produits naturels, bios et écologiques</title>
         <meta name="description" content="nature, naturel, eco, éco, écologique, santé, nutrition">
         <meta name="viewport" content="width=device-width">
@@ -24,7 +24,7 @@
         <header>
             <div id="topContainer">
                 <hgroup>
-                    <h1><a href="#" "aller vers la page d'accueil de sebio"><img width="220" height="100" src="./img/logo.png" alt="logo sebio"></a></h1>
+                    <h1><a href="#" title="aller vers la page d'accueil de sebio"><img width="220" height="100" src="./img/logo.png" alt="logo sebio"></a></h1>
                     <h2>produits naturels, bios et écologiques</h2>
                 </hgroup>
                 <div id="cart">
@@ -73,22 +73,7 @@
                     <a href="./html/connexion.html" class="icon-user"><span>se connecter</span></a>
                     <a href="./html/cart.html" class="icon-basket"><span>mon panier</span></a>
                 </div>
-                <nav id="responsiveNav">
-                    <ul>
-                      <li><a href="#">bons plan</a></li>
-                      <li><a href="#">maternité</a></li>
-                      <li><a href="./html/maison.html">à la maison</a></li>
-                      <li><a href="#">santé</a></li>
-                      <li><a href="#">mode</a></li>
-                    </ul>
-                    <form action="#">
-                        <fieldset>
-                            <label for="searchR" class="icon-search"><span>rechercher&nbsp;:</span></label>
-                            <input type="search" name="search" id="searchR" placeholder="rechercher"/>
-                        </fieldset>
-                    </form>
-                </nav>
-                <nav id="nonResponsiveNav">
+                <nav>
                     <h1 id="navTitle">navigation menu</h1>
                     <ul id="navUl">
                         <li class="firstItem">
@@ -286,6 +271,14 @@
                             </ul>
                         </li>
                     </ul>
+                    <select name="navigationR" id="navigationR">
+                        <option value="" selected>aller vers...</option>
+                        <option value="#">bons plans</option>
+                        <option value="#">maternité</option>
+                        <option value="./html/maison.html">à la maison</option>
+                        <option value="#">santé</option>
+                        <option value="#">mode</option>
+                    </select>
                     <form action="#">
                         <fieldset>
                             <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>

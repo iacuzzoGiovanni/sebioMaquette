@@ -30,9 +30,25 @@
                 <div id="cart">
                     <h1 class="icon-down-dir icon-basket">
                         panier
+                        <span class="numberProduct">1</span>
                     </h1>
                     <div>
-                        infos
+                        <ul>
+                            <li>
+                                <span>Prana force</span>
+                                <span>1</span>
+                                <span>24€</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <span>expédition&nbsp;:</span>
+                            <span>6€</span>
+                        </div>
+                        <div>
+                            <span>total&nbsp;:</span>
+                            <span>2€</span>
+                        </div>
+                        <a href="./html/panier.html">commander</a>
                     </div>
                 </div>
                 <div id="user">
@@ -46,8 +62,8 @@
                                 <input id="userId" name="userId" type="text" placeholder="indiquez votre login" />
                                 <label for="userPass">mot de passe&nbsp;:</label>
                                 <input id="userPass" name="userPass" type="password" placeholder="indiquez votre mot de passe" />
-                                <a href="./html/inscription.html">pas encore membre&nbsp;?</a>
-                                <button id="connexion" type="submit">connexion</button>   
+                                <button id="connexion" type="submit">connexion</button>
+                                <a href="./html/inscription.html" title="aller vers la page d'inscription">pas encore inscrit&nbsp;?</a>   
                             </fieldset>
                         </form>
                     </div>
@@ -67,12 +83,12 @@
                     </ul>
                     <form action="#">
                         <fieldset>
-                            <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>
-                            <input type="search" name="search" id="search" placeholder="rechercher"/>
+                            <label for="searchR" class="icon-search"><span>rechercher&nbsp;:</span></label>
+                            <input type="search" name="search" id="searchR" placeholder="rechercher"/>
                         </fieldset>
                     </form>
                 </nav>
-                <nav id="nonResponsiveNav"> 
+                <nav id="nonResponsiveNav">
                     <h1 id="navTitle">navigation menu</h1>
                     <ul id="navUl">
                         <li class="firstItem">
@@ -114,7 +130,13 @@
                                            <li><a href="#">protection solaire</a></li>
                                        </ul>
                                    </li><!--
-                                --><li><a href="#"><strong>couches</strong></a></li><!--
+                                --><li>
+                                       <a href="#"><strong>couches</strong></a>
+                                       <ul>
+                                           <li><a href="#">lavables</a></li>
+                                           <li><a href="#">jetables</a></li>
+                                       </ul>
+                                  </li><!--
                                 --><li>
                                        <a href="#"><strong>alimentation bio pour bébé</strong></a>
                                        <ul>
@@ -134,11 +156,11 @@
                                            <li><a href="#">activités manuelles</a></li>
                                        </ul>
                                    </li><!--
-                                --><li><a href="#">location de porte-bébé</a></li>
+                                --><li><a href="#"><strong>location de porte-bébé</strong></a></li>
                             </ul>
                         </li><!--
                         --><li class="firstItem">
-                            <a href="#" class="icon-down-dir">à la maison</a>
+                            <a href="./html/maison.html" class="icon-down-dir">à la maison</a>
                             <ul class="firstDrop">
                                 <li>
                                     <a href="#"><strong>papeterie</strong></a>
@@ -260,7 +282,7 @@
                                            <li><a href="#">tissus imperméable</a></li>
                                        </ul>
                                 </li><!--
-                                --><li><a href="#">la queue du chat hiver 12/13</a></li>
+                                --><li><a href="#"><strong>la queue du chat hiver 12/13</strong></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -268,6 +290,26 @@
                         <fieldset>
                             <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>
                             <input type="search" name="search" id="search" placeholder="rechercher"/>
+                        </fieldset>
+                        <fieldset class="results">
+                            <ul>
+                                <li>
+                                    <a href="./html/produit.html">
+                                        <img src="http://placehold.it/75x75" width="75" height="75" alt="Prana force flacon">
+                                        <p>
+                                          Une gamme aux huiles essentielles spécialement conçue pour l'hiver. Nouveau: sirop, spray pour la gorge, spray nasal.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./html/produit.html">
+                                        <img src="http://placehold.it/75x75" width="75" height="75" alt="Prana force flacon">
+                                        <p>
+                                          Une gamme aux huiles essentielles spécialement conçue pour l'hiver. Nouveau: sirop, spray pour la gorge, spray nasal.
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
                         </fieldset>
                     </form>
                 </nav>
@@ -466,15 +508,7 @@
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
+        <script src="../js/jquery.hoverIntent.minified.js"></script>
         <script src="../js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

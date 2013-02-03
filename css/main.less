@@ -196,7 +196,7 @@ hgroup h2{
 
 #user div, #cart>div{
     background-color: @vert;
-    width: 21.428571429em;
+    width: 23.7em;
     position: absolute;
     display: none;
 }
@@ -1561,7 +1561,7 @@ label+span, input+span{
     display: none;
 }
 
-#responsiveNav{
+nav select{
     display: none;
 }
 /* ==========================================================================
@@ -1718,6 +1718,7 @@ label+span, input+span{
         float: none;
         width: auto;
         margin-bottom: 1em;
+        padding-top: 3em;
     }
 
     hgroup h2{
@@ -1749,38 +1750,6 @@ label+span, input+span{
 
     nav{
         padding: 0;
-    }
-
-    #nonResponsiveNav{
-        display: none;
-    }
-
-    #responsiveNav a{
-        display: block;
-        padding: 1em;
-        .gradient(#649312,@vert);
-        color: @blanc;
-        .border-radius(3px);
-        text-shadow: 0px 1px 1px rgba(0,0,0,.3);
-        filter: dropshadow(color=rgba(0,0,0,.3), offx=0, offy=1);
-        text-align: center;
-        text-decoration: none;
-    }
-
-    #responsiveNav{
-        text-align: center;
-        padding: 1em 0;
-        display: block;
-    }
-
-    #responsiveNav ul{
-        padding: 0;
-    }
-
-    #responsiveNav form{
-        float: none;
-        top: 0;
-        margin-bottom: 0;
     }
 
     #search{
@@ -1822,6 +1791,29 @@ label+span, input+span{
         width: 100%;
         .box-sizing();
         margin: 0;
+    }
+
+    nav #navUl{
+        display: none;
+    }
+
+    nav select{
+        display: inline-block;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+    }
+
+    nav form{
+        top: 0;
+        right: 1.5em;
+        width: 45%;
+    }
+
+    #search{
+        width: 80%;
     }
 }/*pour ecran en deca de 959px*/
 
@@ -1884,10 +1876,6 @@ label+span, input+span{
         margin-bottom: 3%;
         margin-left: 3%;
         width: 45%;
-    }
-
-    #responsiveNav ul {
-        overflow: hidden;
     }
 }
 

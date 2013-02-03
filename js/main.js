@@ -37,6 +37,9 @@
 		$(".firstItemJs").hoverIntent({over: makeTall, timeout: 100, out:makeShort});
 		$("#search").focus(function(e){$(".results").show();})
 					.focusout(function(e){$('.results').hide();});
+		$("nav select").change(function() {
+			window.location = $(this).find("option:selected").val();
+		});
 	} );
 }( jQuery ) );
 
