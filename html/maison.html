@@ -24,7 +24,7 @@
         <header>
             <div id="topContainer">
                 <hgroup>
-                    <h1><a href="../index.html" "aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
+                    <h1><a href="#" title="aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
                     <h2>produits naturels, bios et écologiques</h2>
                 </hgroup>
                 <div id="cart">
@@ -48,7 +48,7 @@
                             <span>total&nbsp;:</span>
                             <span>2€</span>
                         </div>
-                        <a href="./html/panier.html">commander</a>
+                        <a href="./panier.html">commander</a>
                     </div>
                 </div>
                 <div id="user">
@@ -63,32 +63,17 @@
                                 <label for="userPass">mot de passe&nbsp;:</label>
                                 <input id="userPass" name="userPass" type="password" placeholder="indiquez votre mot de passe" />
                                 <button id="connexion" type="submit">connexion</button>
-                                <a href="./html/inscription.html" title="aller vers la page d'inscription">pas encore inscrit&nbsp;?</a>   
+                                <a href="./inscription.html" title="aller vers la page d'inscription">pas encore inscrit&nbsp;?</a>   
                             </fieldset>
                         </form>
                     </div>
                 </div>
                 <div class="responsiveCartUser">
-                    <a href="./html/inscription.html"><span>pas encore inscit&nbsp;?</span></a>
-                    <a href="./html/connexion.html" class="icon-user"><span>se connecter</span></a>
-                    <a href="./html/cart.html" class="icon-basket"><span>mon panier</span></a>
+                    <a href="./inscription.html"><span>pas encore inscit&nbsp;?</span></a>
+                    <a href="./connexion.html" class="icon-user"><span>se connecter</span></a>
+                    <a href="./cart.html" class="icon-basket"><span>mon panier</span></a>
                 </div>
-                <nav id="responsiveNav">
-                    <ul>
-                      <li><a href="#">bons plan</a></li>
-                      <li><a href="#">maternité</a></li>
-                      <li><a href="./html/maison.html">à la maison</a></li>
-                      <li><a href="#">santé</a></li>
-                      <li><a href="#">mode</a></li>
-                    </ul>
-                    <form action="#">
-                        <fieldset>
-                            <label for="searchR" class="icon-search"><span>rechercher&nbsp;:</span></label>
-                            <input type="search" name="search" id="searchR" placeholder="rechercher"/>
-                        </fieldset>
-                    </form>
-                </nav>
-                <nav id="nonResponsiveNav">
+                <nav>
                     <h1 id="navTitle">navigation menu</h1>
                     <ul id="navUl">
                         <li class="firstItem">
@@ -160,7 +145,7 @@
                             </ul>
                         </li><!--
                         --><li class="firstItem">
-                            <a href="./html/maison.html" class="icon-down-dir">à la maison</a>
+                            <a href="./maison.html" class="icon-down-dir">à la maison</a>
                             <ul class="firstDrop">
                                 <li>
                                     <a href="#"><strong>papeterie</strong></a>
@@ -286,6 +271,14 @@
                             </ul>
                         </li>
                     </ul>
+                    <select name="navigationR" id="navigationR">
+                        <option value="" selected>aller vers...</option>
+                        <option value="#">bons plans</option>
+                        <option value="#">maternité</option>
+                        <option value="./maison.html">à la maison</option>
+                        <option value="#">santé</option>
+                        <option value="#">mode</option>
+                    </select>
                     <form action="#">
                         <fieldset>
                             <label for="search" class="icon-search"><span>rechercher&nbsp;:</span></label>
@@ -294,7 +287,7 @@
                         <fieldset class="results">
                             <ul>
                                 <li>
-                                    <a href="./html/produit.html">
+                                    <a href="./produit.html">
                                         <img src="http://placehold.it/75x75" width="75" height="75" alt="Prana force flacon">
                                         <p>
                                           Une gamme aux huiles essentielles spécialement conçue pour l'hiver. Nouveau: sirop, spray pour la gorge, spray nasal.
@@ -302,7 +295,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./html/produit.html">
+                                    <a href="./produit.html">
                                         <img src="http://placehold.it/75x75" width="75" height="75" alt="Prana force flacon">
                                         <p>
                                           Une gamme aux huiles essentielles spécialement conçue pour l'hiver. Nouveau: sirop, spray pour la gorge, spray nasal.
