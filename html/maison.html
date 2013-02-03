@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
         <title>Sebio - produits naturels, bios et écologiques</title>
         <meta name="description" content="nature, naturel, eco, éco, écologique, santé, nutrition">
         <meta name="viewport" content="width=device-width">
@@ -24,7 +24,7 @@
         <header>
             <div id="topContainer">
                 <hgroup>
-                    <h1><a href="#" title="aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
+                    <h1><a href="../index.html" title="aller vers la page d'accueil de sebio"><img width="220" height="100" src="../img/logo.png" alt="logo sebio"></a></h1>
                     <h2>produits naturels, bios et écologiques</h2>
                 </hgroup>
                 <div id="cart">
@@ -323,6 +323,12 @@
                                 <li><a href="#">la maison au naturel</a></li>
                                 <li><a href="#">produits d'entretien</a></li>
                             </ul>
+                            <select name="type" id="type">
+                              <option value="#">papeterie</option>
+                              <option value="#">livres</option>
+                              <option value="#">la maison au naturel</option>
+                              <option value="#">produits d'entretien</option>
+                            </select>
                         </li>
                         <li>
                             <strong>prix</strong>
@@ -332,6 +338,12 @@
                                 <li><a href="#">entre 50 et 100 euros</a></li>
                                 <li><a href="#">plus de 100 euros</a></li>
                             </ul>
+                            <select name="type" id="type">
+                              <option value="#">moins de 10 euros</option>
+                              <option value="#">entre 10 et 50 euros</option>
+                              <option value="#">entre 50 et 100 euros</option>
+                              <option value="#">plus de 100 euros</option>
+                            </select>
                         </li>
                         <li>
                             <strong>date de mise en commerce</strong>
@@ -341,13 +353,19 @@
                                 <li><a href="#">2011</a></li>
                                 <li><a href="#">2012</a></li>
                             </ul>
+                            <select name="date" id="date">
+                              <option value="#">2009</option>
+                              <option value="#">2010</option>
+                              <option value="#">2011</option>
+                              <option value="#">2012</option>
+                            </select>
                         </li>
                     </ul>
                 </aside>
                 <section>
                     <h2>tous les produits "à la maison"</h2>
                     <div class="page">
-                        <span><stong>page&nbsp;:</strong></span>
+                        <span><strong>page&nbsp;:</strong></span>
                         <ul>
                           <li><a href="#" title="aller a la page 1">1</a></li>
                           <li><a href="#" title="aller a la page 2">2</a></li>
@@ -356,7 +374,7 @@
                         </ul>
                     </div>
                     <div class="tri">
-                        <span><stong>trier selon&nbsp;:</strong></span>
+                        <span><strong>trier selon&nbsp;:</strong></span>
                         <ul>
                           <li><a href="#" title="trier les éléments de façon ascendante">prix ascendant</a></li>
                           <li><a href="#" title="trier les éléments de façon décroissante">prix décroissant</a></li>
@@ -429,7 +447,7 @@
                         <a class="viewProduct" href="#" title="aller vers la page du produit pour voir tous les détails le concernant">ajouter ce produit au panier</a>
                     </article>
                     <div class="page">
-                        <span><stong>page&nbsp;:</strong></span>
+                        <span><strong>page&nbsp;:</strong></span>
                         <ul>
                           <li><a href="#" title="aller a la page 1">1</a></li>
                           <li><a href="#" title="aller a la page 2">2</a></li>

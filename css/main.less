@@ -923,7 +923,7 @@ footer a{
     filter: dropshadow(color=#000000, offx=0, offy=1);
 }
 
-#signIn label{
+#signIn label, .sexeLabel{
     font-weight: 700;
     display: inline-block;
     width: 47%;
@@ -1006,6 +1006,10 @@ label+span, input+span{
     background-color: @vert;
     padding: 1em;
     .border-radius(3px);
+}
+
+#filter select{
+    display: none;
 }
 
 #filter h2{
@@ -1192,7 +1196,7 @@ label+span, input+span{
     margin-bottom: 2em;
 }
 
-#shippingAddress{
+.shippingAddress{
     background-image: url("../img/linedpaper.png");
 }
 
@@ -1785,6 +1789,16 @@ nav select{
     #filter>ul>li{
         float: left;
         width: 32%;
+    }
+
+    #filter>ul ul{
+        display: none;
+    }
+
+    #filter select{
+        display: block;
+        margin-top: 1em;
+        width: 90%;
     }
 
     #houseContainer section{
