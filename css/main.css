@@ -1318,7 +1318,8 @@ input + span {
   text-align: center;
   margin-bottom: 2em;
 }
-.shippingAddress {
+.shippingAddress,
+.address {
   background-image: url("../img/linedpaper.png");
 }
 .address {
@@ -1646,8 +1647,9 @@ input + span {
   margin: 0;
 }
 #TT {
-  text-align: right;
+  text-align: center;
   margin-top: 1em;
+  font-size: 2em;
 }
 #reduc,
 #logisticPrice {
